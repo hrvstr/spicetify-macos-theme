@@ -1,0 +1,269 @@
+/* Font
+   ========================================================================== */
+
+body {
+    font-family: 'SF Pro Display';
+}
+
+/* Header
+   ========================================================================== */
+
+.Header__background-overlay,
+.Header__background-scroll-overlay {
+	background: var(--modspotify_sidebar_and_player_bg);
+}
+
+.GlueHeader__background-color,
+.GlueHeader__background-overlay {
+	 background-color: var(--modspotify_sidebar_and_player_bg); 
+}
+
+.glue-page-header__background-color {
+    background-color: unset;
+    background-image: unset;
+}
+
+/* Titles
+   ========================================================================== */
+
+.Header__content-wrapper {
+	min-height: unset;
+}
+
+.Header {
+	min-height: unset;
+}
+
+.Header__content .Header__title-text {
+    font-size: 36px;
+    line-height: 28px;
+}
+
+.Header__data {
+    padding-bottom: 0px;
+}
+
+.Header__content-inner {
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+/* Sidebar
+   ========================================================================== */
+
+#menu-wrapper {
+    min-width: 185px;
+}
+
+.SidebarListItem--is-active,
+.RootlistItem--is-active {
+    background-color: #595959 !important;
+}
+
+.SidebarListItem--is-active:after,
+.RootlistItem--is-active:before {
+	display: none;
+}
+
+.sidebar {
+	--left-sidebar-item-height: 26px;
+    --left-sidebar-padding-left: 18px;
+    --left-sidebar-padding-right: 18px;
+}
+
+.sidebar .sidebar-navbar {
+	padding-top: 0;
+}
+
+.SidebarListItemLink:link, 
+.SidebarListItemLink:visited  {
+	color: var(--modspotify_main_fg);
+	font-weight: 400;
+}
+
+html .SidebarList__title {
+    line-height: 16px;
+    letter-spacing: unset;
+    font-weight: 900;
+    color: var(--modspotify_secondary_fg);
+    text-transform: unset;
+}
+
+.SidebarListItemLink--tall {
+    height: 32px;
+}
+
+/* Nav bar
+   ========================================================================== */
+   
+.nav.navbar-nav {
+	overflow: hidden !important;
+}
+
+.nav.navbar-nav a {
+	overflow: visible !important;
+}
+
+.nav.navbar-nav a::after {
+	display: none;
+}
+
+.nav.navbar-nav a:focus:not(.button):active::after{
+	background-color: var(--modspotify_pressing_fg) !important;
+}
+
+.nav > li.active > a {
+    background-color: var(--modspotify_indicator_fg_and_button_bg);
+	border-radius: 3px;
+	padding: 5px 10px 5px 10px;
+}
+
+.navbar-nav > li > a {
+	letter-spacing: unset;
+}
+
+.nav > li > a {
+	display: unset;
+}
+
+.glue-page-header--with-active-sticky-header .navbar.sticky-top {
+    background-color: var(--modspotify_sidebar_and_player_bg);
+    border-bottom: 1px solid var(--modspotify_main_bg) !important;
+}
+
+/* Search input
+   ========================================================================== */
+   
+.SearchInput {
+	color: var(--modspotify_main_fg);
+}
+.SearchInput__input {
+	color: var(--modspotify_main_fg);
+	background-color: #6c6c6c !important;
+	border-radius: 5px !important;
+}
+
+/* Player bar
+   ========================================================================== */
+   
+.view-player {
+/*     background-image: linear-gradient(#424242, #3b3b3b); */
+    border-top: 1px solid var(--modspotify_sidebar_and_player_bg);
+}
+
+/* Remove Play Button Outline */
+.view-player .player-controls-container .controls .button-play.button-play.playing:not(:hover),
+.view-player .player-controls-container .controls .button-play:after,
+.view-player .player-controls-container .controls .button-play:not(:disabled):hover,
+.view-player .player-controls-container .controls .button-play:not(:disabled):hover:after,
+.view-player .player-controls-container .controls .button-play.button-play.playing:not(:hover):after,
+.view-player .player-controls-container .controls .button-play
+ {
+	box-shadow: unset;
+}
+
+.view-player .player-controls-container .controls .button-play.button-play:before,
+.view-player .player-controls-container .controls .button-play.button-play.playing:not(:hover):before,
+.view-player .player-controls-container .controls .button-play.button-play.playing:hover:before,
+.view-player .player-controls-container .controls .next:before,
+.view-player .player-controls-container .controls .previous:before {
+    font-size: 26px;
+}
+
+/* Buttons
+   ========================================================================== */
+
+.button.button-green {
+	border-radius: 3px;
+}
+
+.button {
+	letter-spacing: unset;
+	font-size: 12px;
+}
+
+.Button,
+.button.button-green,
+.button.button-with-stroke,
+.button.button-with-stroke::after,
+.button.button-with-stroke.added::after,
+.button.button-with-stroke.added,
+.button.button-icon-with-stroke,
+.button.button-icon-with-stroke::after,
+.Button--style-stroke:after {
+    border-radius: 3px;
+}
+
+.card-type-artist .card-image, .card-type-artist .card-image-hit-area, .card-type-artist .card-overlay, .card-type-artist .card-placeholder-wrapper, .card-type-artist .card-image-link, .card-type-artist .card-hit-area-counter-scale, .card-type-collection-artist .card-image, .card-type-collection-artist .card-image-hit-area, .card-type-collection-artist .card-overlay, .card-type-collection-artist .card-placeholder-wrapper, .card-type-collection-artist .card-image-link, .card-type-collection-artist .card-hit-area-counter-scale, .card-type-user .card-image, .card-type-user .card-image-hit-area, .card-type-user .card-overlay, .card-type-user .card-placeholder-wrapper, .card-type-user .card-image-link, .card-type-user .card-hit-area-counter-scale {
+    border-radius: 0px;
+}
+
+/* Button Hover Fix */
+.button.button-green.contextmenu-active, .button.button-green:not(:disabled):hover {
+    background-color: var(--modspotify_pressing_button_bg);
+}
+
+/* Context Menu
+   ========================================================================== */
+
+.context-menu {
+    padding: unset;
+    border: 2px solid #5a5a5a;
+    color: var(--modspotify_main_fg);
+}
+
+.context-menu .item {
+    padding: 8px 20px;
+}
+
+.context-menu .sep {
+    background-color: #5a5a5a;
+    height: 2px;
+}
+
+/* Misc
+   ========================================================================== */
+
+/* Explicit Indicator Fix */
+.tl-explicit .label, .tl-premium .label {
+	color: var(--modspotify_secondary_fg);
+}
+
+/* Now Playing Indicator */
+.TableCellSong--track-is-playing .TableCellSong__featuredArtist, 
+.TableCellSong--track-is-playing .TableCellSong__text-truncator, 
+.TableCellSong--track-is-playing .TableCellSong__track-name,
+.TableCellDuration--track-is-playing {
+	color: var(--modspotify_main_fg);
+}
+
+/* Hide profile name and pic, upgrade button and device connect bar at bottom, new playlist button and banner ads */
+.profile.content-top-bar__profile-link,
+.upgrade-button,
+.view-player .remote-playback-bar,
+.LeftSidebarNewPlaylistButton__button,
+.ConnectPopup__devices-image,
+#leaderboard-ad-wrapper,
+.glue-page-header__content .glue-page-header__count-label {
+	display: none !important;
+}
+
+/*Round corner cover image*/
+.card-image,
+.card-placeholder-wrapper,
+.card-image-content-wrapper,
+.Card .Card__image,
+.Card .Card__image-wrapper,
+.Card--artist .Card__image {
+	border-radius: 5px !important;
+	overflow: hidden !important
+}
+
+/* Layout Borders */
+.view-player {
+	border-top: 1px solid var(--modspotify_sidebar_and_player_bg);
+}
+
+#menu-wrapper {
+	border-right: 1px solid var(--modspotify_sidebar_and_player_bg);
+}
