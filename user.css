@@ -12,17 +12,12 @@ body {
 
 .GlueHeader__background-color,
 .GlueHeader__background-overlay {
-	 background-color: var(--modspotify_sidebar_and_player_bg); 
+	 background-color: var(--modspotify_sidebar_and_player_bg);
 }
 
 .glue-page-header__background-color {
     background-color: unset;
     background-image: unset;
-}
-
-.Header--with-active-sticky-header .Header__background {
-    opacity: 0.95;
-    backdrop-filter: blur(15px);
 }
 
 /* Titles
@@ -74,7 +69,7 @@ body {
 	padding-top: 0;
 }
 
-.SidebarListItemLink:link, 
+.SidebarListItemLink:link,
 .SidebarListItemLink:visited  {
 	color: var(--modspotify_main_fg);
 	font-weight: 400;
@@ -94,7 +89,7 @@ html .SidebarList__title {
 
 /* Nav bar
    ========================================================================== */
-   
+
 .nav.navbar-nav {
 	overflow: hidden !important;
 }
@@ -132,7 +127,7 @@ html .SidebarList__title {
 
 /* Search input
    ========================================================================== */
-   
+
 .SearchInput {
 	color: var(--modspotify_main_fg);
 }
@@ -144,7 +139,7 @@ html .SidebarList__title {
 
 /* Player bar
    ========================================================================== */
-   
+
 .view-player {
     border-top: 1px solid var(--modspotify_sidebar_and_player_bg);
 }
@@ -234,7 +229,7 @@ button[data-button=add-recommendation],
 }
 
 .context-menu .item.parent:after {
-    top: 2px;    
+    top: 2px;
 }
 
 /* Misc
@@ -246,8 +241,8 @@ button[data-button=add-recommendation],
 }
 
 /* Now Playing Indicator */
-.TableCellSong--track-is-playing .TableCellSong__featuredArtist, 
-.TableCellSong--track-is-playing .TableCellSong__text-truncator, 
+.TableCellSong--track-is-playing .TableCellSong__featuredArtist,
+.TableCellSong--track-is-playing .TableCellSong__text-truncator,
 .TableCellSong--track-is-playing .TableCellSong__track-name,
 .TableCellDuration--track-is-playing {
 	color: var(--modspotify_main_fg);
@@ -271,23 +266,23 @@ button[data-button=add-recommendation],
 .Card .Card__image,
 .Card .Card__image-wrapper,
 .Card--artist .Card__image,
-.Card--artist .Card__image-hit-area, .Card--artist .Card__overlay, .Card--artist .Card__placeholder, .Card--profile .Card__image, .Card--profile .Card__image-hit-area, .Card--profile .Card__overlay, .Card--profile .Card__placeholder 
+.Card--artist .Card__image-hit-area, .Card--artist .Card__overlay, .Card--artist .Card__placeholder, .Card--profile .Card__image, .Card--profile .Card__image-hit-area, .Card--profile .Card__overlay, .Card--profile .Card__placeholder
   {
 	border-radius: 5px !important;
 	overflow: hidden !important
 }
 
 .Card--artist .Card__image-hit-area, .Card--profile .Card__image-hit-area {
-    right: 0; 
+    right: 0;
     left: 0;
 }
 .Card--artist .Card__image-hit-area, .Card--profile .Card__image-hit-area {
-    top: 0; 
+    top: 0;
     bottom: 0;
 }
 
 .Card--artist .Card__info-wrapper {
-    text-align: unset;    
+    text-align: unset;
 }
 
 /* Layout Borders */
